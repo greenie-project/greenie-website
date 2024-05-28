@@ -1,0 +1,95 @@
+.container-carousel {
+  background-color: var(--color-verde-1);
+}
+
+.carousel-inner {
+  width: 100%;
+  max-width: 192rem;
+  margin: 0 auto;
+}
+
+.all-content-carousel {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 1rem;
+}
+
+.info-side-carousel {
+  display: grid;
+  gap: 4rem;
+  margin: 10rem 0rem;
+}
+
+.top-product {
+  display: flex;
+  gap: 1rem;
+}
+
+.top-product p {
+  display: flex;
+  align-items: center;
+  color: var(--color-verde-3);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.top-product img {
+  width: 100%;
+  max-width: 4.5rem;
+}
+
+.carousel-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+
+.carousel-text p {
+  font-weight: 300;
+}
+
+.carousel-button a {
+  background-color: var(--color-verde-3);
+  display: inline-block;
+  padding: 2rem 4rem;
+  text-decoration: none;
+  color: var(--color-white);
+  border-radius: 1rem;
+  font-size: 2.4rem;
+  transition: transform 0.3s ease;
+  font-weight: 500;
+}
+
+.carousel-button a:hover {
+  transform: scale(1.1);
+  background-color: var(--color-verde-2);
+  color: var(--color-verde-4);
+}
+
+.image-side-carousel {
+  align-self: center;
+}
+
+.image-side-carousel > div {
+  border: 0.3rem solid var(--color-verde-3);
+  border-radius: 50%;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+  width: 50rem;
+  height: 50rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-side-carousel img {
+  width: 100%;
+  height: auto;
+  max-width: 45rem;
+  transition: transform 0.3s ease;
+}
+
+.image-side-carousel img:hover {
+  transform: scale(1.1);
+}

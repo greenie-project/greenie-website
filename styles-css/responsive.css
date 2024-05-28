@@ -1,0 +1,17 @@
+@media screen and (max-width: 144rem) {
+  html {
+    font-size: 46.8%;
+  }
+
+  .container {
+    max-width: 120rem;
+  }
+
+  .navbar-content {
+    max-width: 120rem;
+  }
+
+  .carousel-inner {
+    max-width: 120rem;
+  }
+}

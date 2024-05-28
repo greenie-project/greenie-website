@@ -1,0 +1,83 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16rem;
+  background-color: var(--color-white);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar-content {
+  width: 100%;
+  max-width: 168rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-content img {
+  width: 100%;
+  max-width: 25rem;
+  display: inline-block;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  width: 55rem;
+  max-width: 50rem;
+}
+
+.container-fluid form {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.container-fluid form > input {
+  border-radius: 2rem;
+  font-size: 2rem;
+  background-color: var(--color-verde-3);
+}
+
+.container-fluid form > input::placeholder {
+  color: var(--color-white);
+  opacity: 0.5;
+  padding-left: 2rem;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-icons img {
+  width: 100%;
+  max-width: 3.2rem;
+}
+
+.navbar-icons a {
+  display: flex;
+  border: 0.3rem solid var(--color-verde-3);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.icon-name {
+  display: none;
+  position: absolute;
+  transform: translateY(-25%);
+  left: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-verde-3);
+  color: white;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.navbar-icons a:hover .icon-name {
+  display: block;
+}

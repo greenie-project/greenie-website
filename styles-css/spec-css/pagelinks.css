@@ -1,0 +1,20 @@
+.container-links {
+  margin: 20rem 0rem 4rem 0rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container-links div {
+  display: flex;
+  gap: 2rem;
+}
+
+.container-links a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.container-links a:hover {
+  color: var(--color-verde-2);
+}
