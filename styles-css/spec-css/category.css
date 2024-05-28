@@ -1,0 +1,47 @@
+.all-category {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10rem;
+}
+
+.spec-category {
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.spec-category img {
+  width: 100%;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+  max-width: 8rem;
+}
+
+.category-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: var(--color-white);
+}
+
+.spec-category:hover {
+  background-color: var(--color-verde-2);
+  transform: scale(1.1);
+}
+
+.spec-category:hover .category-text {
+  opacity: 1;
+}
+
+.spec-category:hover img {
+  transform: rotate(10deg);
+}

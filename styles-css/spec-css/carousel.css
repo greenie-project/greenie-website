@@ -11,13 +11,12 @@
 .all-content-carousel {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 0 1rem;
+  margin: 10rem 1.5rem;
 }
 
 .info-side-carousel {
   display: grid;
   gap: 4rem;
-  margin: 10rem 0rem;
 }
 
 .top-product {
@@ -47,24 +46,6 @@
 
 .carousel-text p {
   font-weight: 300;
-}
-
-.carousel-button a {
-  background-color: var(--color-verde-3);
-  display: inline-block;
-  padding: 2rem 4rem;
-  text-decoration: none;
-  color: var(--color-white);
-  border-radius: 1rem;
-  font-size: 2.4rem;
-  transition: transform 0.3s ease;
-  font-weight: 500;
-}
-
-.carousel-button a:hover {
-  transform: scale(1.1);
-  background-color: var(--color-verde-2);
-  color: var(--color-verde-4);
 }
 
 .image-side-carousel {
