@@ -7,7 +7,7 @@
   display: flex;
   align-self: center;
   font-weight: 700;
-  padding: 1rem 4rem;
+  padding: 1.2rem 4rem;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   transition: transform 0.3s ease;
@@ -89,4 +89,80 @@
 .container-featured-products a {
   padding: 1.5rem 3.5rem;
   font-size: 2rem;
+}
+
+.second-section-fp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4rem;
+}
+
+.spec-second-section-fp {
+  background-color: var(--color-bege);
+  border-radius: 2rem;
+}
+
+.spec-second-section-fp:nth-of-type(2n) {
+  background-color: var(--color-verde-1);
+}
+
+.spec-2-fp-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.spec-2-fp-img img {
+  width: 100%;
+  max-width: 50rem;
+  object-fit: contain; /* Mantém a proporção da imagem e a recorta para caber no contêiner */
+}
+
+/* Adicional para garantir que todas as imagens tenham a mesma altura */
+.spec-2-fp-img img {
+  height: 100%;
+  max-height: 20rem; /* Define uma altura máxima para as imagens */
+}
+
+.spec-second-section-fp {
+  background-color: var(--color-bege);
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden; /* Para garantir que o conteúdo não saia do contêiner */
+}
+
+.spec-second-section-fp:nth-of-type(2n) {
+  background-color: var(--color-verde-1);
+}
+
+.spec-2-fp-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.spec-2-fp-img img {
+  width: 100%;
+  max-width: 50rem;
+  object-fit: contain;
+}
+
+.spec-2-fp-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-white);
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.spec-second-section-fp:hover .spec-2-fp-info {
+  opacity: 1;
+  transform: translateY(0);
 }
