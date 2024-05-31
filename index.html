@@ -20,7 +20,7 @@
 
 <body>
    <!-- NAVBAR -->
-   <nav class="section-fixed">
+   <nav>
       <div class="navbar-content">
          <img src="styles-css/assets/navbar/logo-temporaria.svg" alt="">
          <div class="container-fluid">
@@ -41,7 +41,6 @@
          </div>
       </div>
    </nav>
-   </div>
 
    <!-- PAGE LINKS -->
    <div class="container-links">
@@ -58,7 +57,7 @@
 
    <!-- CAROUSEL -->
    <div class="container-carousel">
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
          <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -120,7 +119,7 @@
       </div>
    </div>
 
-   <div class="container">
+   <section class="container">
       <!-- CATEGORY -->
       <div id="category" class="container-category">
          <div class="section-title">
@@ -286,8 +285,75 @@
          <div class="section-title">
             <h2>Feedbacks</h2>
          </div>
+         <div id="carouselExampleFades" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="feedback-user">
+                     <img src="styles-css/assets/feedbacks/carlosbullet.png" class="d-block w-100" alt="...">
+                     <p class="feedback-user-name">Carlos Bullet</p>
+                  </div>
+                  <div class="feedbacks-carousel-caption">
+                     <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                     </div>
+                     <p>Gostei muito dos produtos em geral da loja! #PST</p>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="feedback-user">
+                     <img src="styles-css/assets/feedbacks/bellebelinha.png" class="d-block w-100" alt="...">
+                     <p class="feedback-user-name">Belle Belinha</p>
+                  </div>
+                  <div class="feedbacks-carousel-caption">
+                     <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                     </div>
+                     <p>Os materiais dos produtos são fantásticos!!!</p>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="feedback-user">
+                     <img src="styles-css/assets/feedbacks/romerobritto.png" class="d-block w-100" alt="...">
+                     <p class="feedback-user-name">Huilton Britto</p>
+                  </div>
+                  <div class="feedbacks-carousel-caption">
+                     <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                     </div>
+                     <p>A arte, o design, a obra prima... tudo da mais ótima qualidade. Nota 10!</p>
+                  </div>
+               </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFades" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFades" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Próximo</span>
+            </button>
+         </div>
+
       </div>
-   </div>
+   </section>
+
+   <footer>
+      <div class="container-footer">
+
+      </div>
+   </footer>
 
 
 
