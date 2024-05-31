@@ -58,10 +58,13 @@ a {
   color: var(--color-verde-4);
 }
 
-.container-category {
-  margin: 10rem 0;
-  display: grid;
-  gap: 4rem;
+.rating span {
+  font-size: 2.4rem;
+}
+
+.checked {
+  color: #f2e145;
+  text-shadow: 0 0 0.1rem var(--color-black);
 }
 
 .container-featured-products {
@@ -70,11 +73,14 @@ a {
   gap: 4rem;
 }
 
-.rating span {
-  font-size: 2.4rem;
+.container-category {
+  margin: 10rem 0;
+  display: grid;
+  gap: 4rem;
 }
 
-.checked {
-  color: #f2e145;
-  text-shadow: 0 0 0.1rem var(--color-black);
+.container-feedbacks {
+  margin: 10rem 0;
+  display: grid;
+  gap: 4rem;
 }
