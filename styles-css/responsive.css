@@ -7,11 +7,15 @@
     max-width: 120rem;
   }
 
-  .navbar-content {
+  .container-navbar {
     max-width: 120rem;
   }
 
   .carousel-inner {
+    max-width: 120rem;
+  }
+
+  .container-footer {
     max-width: 120rem;
   }
 }

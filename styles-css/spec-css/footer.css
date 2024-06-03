@@ -1,0 +1,93 @@
+footer {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1) inset;
+  padding: 4rem 0rem;
+}
+
+.container-footer {
+  width: 100%;
+  max-width: 168rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 5rem;
+}
+
+.first-section-footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.footer-logo-and-rights {
+  display: grid;
+  gap: 3rem;
+}
+
+.footer-logo-and-rights img {
+  width: 100%;
+  max-width: 22rem;
+}
+
+.footer-logo-and-rights .footer-medias {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-logo-and-rights .footer-medias img {
+  width: 100%;
+  max-width: 3.2rem;
+  cursor: pointer;
+}
+
+.footer-logo-and-rights p {
+  font-size: 1.2rem;
+  opacity: 50%;
+}
+
+.footer-infos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-infos > div {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer-infos p {
+  font-size: 1.6rem;
+}
+
+.footer-infos .footer-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.footer-infos .footer-links {
+  cursor: pointer;
+  display: grid;
+  gap: 1rem;
+  opacity: 70%;
+}
+
+.second-section-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-payments img {
+  width: 100%;
+  max-width: 6rem;
+}
+
+.footer-terms {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  gap: 2rem;
+}
+
+.footer-terms p {
+  font-size: 1.6rem;
+  opacity: 70%;
+  cursor: pointer;
+}
