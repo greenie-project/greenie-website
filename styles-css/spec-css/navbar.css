@@ -1,5 +1,5 @@
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -9,7 +9,11 @@ nav {
   display: flex;
   align-items: center;
   z-index: 100;
-  position: fixed;
+  transition: top 0.3s;
+}
+
+.navbar-hidden {
+  top: -16rem; /* Ajuste este valor conforme a altura da sua navbar */
 }
 
 .container-navbar {

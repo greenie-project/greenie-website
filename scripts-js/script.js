@@ -10,3 +10,21 @@ iconNames.forEach((iconName) => {
     iconName.style.top = `${newY}px`;
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let lastScrollTop = 0;
+  const navbar = document.getElementById("navbar");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Rolando para baixo
+      navbar.classList.add("navbar-hidden");
+    } else {
+      // Rolando para cima
+      navbar.classList.remove("navbar-hidden");
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para evitar números negativos
+  });
+});
