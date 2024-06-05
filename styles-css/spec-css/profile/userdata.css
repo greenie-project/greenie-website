@@ -1,0 +1,32 @@
+.container-userdata .section-title {
+  padding-top: 18rem;
+}
+
+.container-userdata .section-title hr {
+  height: 0.4rem;
+  background-color: var(--color-verde-4);
+}
+
+.user-data {
+  display: flex;
+  gap: 10rem;
+}
+
+.container-userdata [class^="data-col"] {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.edit-button button {
+  padding: 1rem 4rem;
+  background-color: var(--color-verde-3);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.edit-button button:hover {
+  background-color: var(--color-verde-2);
+  color: var(--color-verde-4);
+}

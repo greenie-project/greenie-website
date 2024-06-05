@@ -103,7 +103,7 @@
 }
 
 .spec-second-section-fp:nth-of-type(2n) {
-  background-color: var(--color-verde-1);
+  background-color: var(--color-verde-3-opaco);
 }
 
 .spec-2-fp-img {
@@ -133,7 +133,7 @@
 }
 
 .spec-second-section-fp:nth-of-type(2n) {
-  background-color: var(--color-verde-1);
+  background-color: var(--color-verde-3-opaco);
 }
 
 .spec-2-fp-img {
