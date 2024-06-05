@@ -40,6 +40,11 @@ a {
   margin: 0 auto;
 }
 
+.section-title-center {
+  display: flex;
+  justify-content: center;
+}
+
 .button-buy-now a {
   background-color: var(--color-verde-3);
   display: inline-block;
@@ -67,20 +72,9 @@ a {
   text-shadow: 0 0 0.1rem var(--color-black);
 }
 
-.container-featured-products {
-  margin: 10rem 0;
-  display: grid;
-  gap: 4rem;
-}
-
-.container-category {
-  margin: 10rem 0;
-  display: grid;
-  gap: 4rem;
-}
-
-.container-feedbacks {
-  margin: 10rem 0;
+/* Regras para todas as classes que começam com "container-" dentro de um elemento com a classe "container" */
+.container [class^="container-"] {
+  padding-top: 10rem;
   display: grid;
   gap: 4rem;
 }

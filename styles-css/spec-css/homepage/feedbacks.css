@@ -1,8 +1,3 @@
-.container-feedbacks .section-title {
-  display: flex;
-  justify-content: center;
-}
-
 .container-feedbacks {
   display: flex;
   flex-direction: column;

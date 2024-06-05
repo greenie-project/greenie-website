@@ -1,7 +1,8 @@
-@import url(spec-css/navbar.css);
-@import url(spec-css/pagelinks.css);
-@import url(spec-css/carousel.css);
-@import url(spec-css/category.css);
-@import url(spec-css/featured-products.css);
-@import url(spec-css/feedbacks.css);
-@import url(spec-css/footer.css);
+@import url(spec-css/homepage/navbar.css);
+@import url(spec-css/homepage/pagelinks.css);
+@import url(spec-css/homepage/carousel.css);
+@import url(spec-css/homepage/category.css);
+@import url(spec-css/homepage/featured-products.css);
+@import url(spec-css/homepage/feedbacks.css);
+@import url(spec-css/homepage/footer.css);
+@import url(spec-css/profile/profile.css);

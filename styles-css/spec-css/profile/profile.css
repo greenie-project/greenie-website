@@ -1,0 +1,65 @@
+.container-account .section-title-center {
+  padding-top: 18rem;
+  text-align: center;
+}
+
+.profile-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-pic {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 2.4rem;
+  color: var(--color-white);
+  background-color: var(--color-verde-3); /* Green color */
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.upload-button:hover {
+  background-color: var(--color-verde-4);
+}
+
+#upload-button {
+  display: none;
+}
+
+.account-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.account-buttons a {
+  padding: 2rem 4rem;
+  gap: 5rem;
+  background-color: var(--color-verde-2);
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.account-buttons a:hover {
+  transform: scale(1.1);
+}
+
+.account-buttons h3 {
+  font-weight: 600;
+}

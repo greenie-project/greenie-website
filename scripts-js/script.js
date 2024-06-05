@@ -11,6 +11,7 @@ iconNames.forEach((iconName) => {
   });
 });
 
+// Navbar visivel apenas ao scrollar para cima
 document.addEventListener("DOMContentLoaded", function () {
   let lastScrollTop = 0;
   const navbar = document.getElementById("navbar");
@@ -28,3 +29,20 @@ document.addEventListener("DOMContentLoaded", function () {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para evitar números negativos
   });
 });
+
+// Trocar a foto de perfil
+document
+  .getElementById("upload-button")
+  .addEventListener("change", function (event) {
+    const file = event.target.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        document.getElementById("profile-pic").src = e.target.result;
+      };
+
+      reader.readAsDataURL(file);
+    }
+  });
