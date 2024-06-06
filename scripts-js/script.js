@@ -46,3 +46,7 @@ document
       reader.readAsDataURL(file);
     }
   });
+
+function setDropdownText(text) {
+  document.getElementById("dropdownMenuButton").textContent = text;
+}
