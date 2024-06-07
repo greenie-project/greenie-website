@@ -16,11 +16,13 @@
     background-color: var(--color-verde-1);
     box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
 .main-image img {
-  width: 100%;
-  max-width: 63rem;
+  width: 63rem;
+  object-fit: contain;
 }
 
 .thumbnails {
