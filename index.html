@@ -36,13 +36,50 @@
                <img src="styles-css/assets/navbar/icons-navbar/cart.svg" alt="">
                <span class="icon-name">Cart</span>
             </a>
-            <a href="pages-html/profile.html">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
                <img src="styles-css/assets/navbar/icons-navbar/profile.svg" alt="">
                <span class="icon-name">Profile</span>
             </a>
          </div>
       </div>
    </nav>
+
+   <!-- Modal -->
+   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-body">
+               <div class="modal-body-logo">
+                  <img src="styles-css/assets/login-cadastro/biglogo.svg" alt="">
+               </div>
+               <div class="modal-body-form">
+                  <h3>Welcome back!<br> Login to your account</h3>
+                  <form id="loginForm">
+                     <div class="mb-3">
+                        <label for="email" class="form-label">
+                           <p>Email</p>
+                        </label>
+                        <input type="email" class="form-control" id="email" required placeholder="Enter your email here">
+                     </div>
+                     <div class="mb-3">
+                        <label for="password" class="form-label">
+                           <p>Password</p>
+                        </label>
+                        <input type="password" class="form-control" id="password" required placeholder="Enter your password here">
+                     </div>
+                     <div class="button-login"><button type="submit" id="loginButton">Login</button></div>
+                  </form>
+                  <div class="sign-up-link">
+                     <p>Don't have an account?</p>
+                     <a href="">Sign Up</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
 
 
    <!-- PAGE LINKS -->

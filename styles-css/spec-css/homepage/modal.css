@@ -1,0 +1,92 @@
+.modal-content {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  padding: 3rem;
+}
+
+.modal-dialog {
+  max-width: 600px; /* Adjust this value to your desired width */
+}
+
+.modal-body img {
+  width: 100%;
+  max-width: 30rem;
+  display: flex;
+  justify-content: start;
+}
+
+.modal-body-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal-body-form h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.modal-body-form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.modal-body-form input {
+  width: 100%;
+  width: 35rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.modal-body-form input::placeholder {
+  color: var(--color-black-opaco);
+}
+
+.modal-body-form p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.modal-body-form .button-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body-form .button-login button {
+  display: inline-block;
+  background-color: var(--color-verde-2);
+  color: var(--color-white);
+  padding: 1rem 5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.sign-up-link {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--color-black);
+}
+
+.sign-up-link a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-verde-3);
+}

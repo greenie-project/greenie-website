@@ -1,6 +1,7 @@
 :root {
   --color-white: #f8f8ff;
   --color-black: #252422;
+  --color-black-opaco: rgba(37, 36, 34, 0.5);
   --color-bege: rgba(218, 215, 205, 0.5); /*background 50%*/
   --color-bege-full: #dad7cd;
   --color-verde-1: rgba(202, 210, 197, 0.5); /*background 50%*/

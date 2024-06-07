@@ -1,3 +1,26 @@
+document
+  .getElementById("loginForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Retrieve email and password values
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    // Define the valid email and password
+    var validEmail = "username@gmail.com";
+    var validPassword = "123456";
+
+    // Check if the entered email and password are correct
+    if (email === validEmail && password === validPassword) {
+      // If validation is successful, redirect to the profile page
+      window.location.href = "pages-html/profile.html";
+    } else {
+      // Display error message
+      alert("Invalid email or password. Please try again.");
+    }
+  });
+
 // Nome flutuante dos ícones da navbar
 const iconNames = document.querySelectorAll(".icon-name");
 
@@ -30,58 +53,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Trocar a foto de perfil
-document
-  .getElementById("upload-button")
-  .addEventListener("change", function (event) {
-    const file = event.target.files[0];
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.querySelector(".form-control");
 
-    if (file) {
-      const reader = new FileReader();
+  searchInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Evita o comportamento padrão do formulário
 
-      reader.onload = function (e) {
-        document.getElementById("profile-pic").src = e.target.result;
-      };
+      const searchTerm = searchInput.value.trim();
 
-      reader.readAsDataURL(file);
+      if (searchTerm !== "") {
+        window.location.href = "/pages-html/allproducts.html";
+      }
     }
   });
-
-function changeImage(thumbnail) {
-  let mainImage = document.getElementById("current-image");
-  let tempSrc = mainImage.src;
-  mainImage.src = thumbnail.src;
-  thumbnail.src = tempSrc;
-}
-
-function setDropdownText(text) {
-  document.getElementById("dropdownMenuButton").textContent = text;
-}
-
-const setaEsquerda = document.querySelector(".seta-esquerda");
-const setaDireita = document.querySelector(".seta-direita");
-const pageNumbers = document.querySelectorAll(".number-pages h3");
-
-let currentPage = 1; // Start on page 1
-
-setaEsquerda.addEventListener("click", () => {
-  if (currentPage > 1) {
-    currentPage--;
-    updatePage();
-  }
 });
-
-setaDireita.addEventListener("click", () => {
-  if (currentPage < pageNumbers.length) {
-    currentPage++;
-    updatePage();
-  }
-});
-
-function updatePage() {
-  // Remove 'active' class from all page numbers
-  pageNumbers.forEach((page) => page.classList.remove("active"));
-
-  // Add 'active' class to the current page number
-  document.getElementById(`page${currentPage}`).classList.add("active");
-}
