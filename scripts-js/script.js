@@ -47,36 +47,61 @@ document
     }
   });
 
-
-  function changeImage(thumbnail) {
-    let mainImage = document.getElementById('current-image');
-    let tempSrc = mainImage.src;
-    mainImage.src = thumbnail.src;
-    thumbnail.src = tempSrc;
+function changeImage(thumbnail) {
+  let mainImage = document.getElementById("current-image");
+  let tempSrc = mainImage.src;
+  mainImage.src = thumbnail.src;
+  thumbnail.src = tempSrc;
 }
 
 function changeBola(color) {
-    let mainImage = document.getElementById('current-image');
-    switch (color) {
-        case 'black':
-            mainImage.src = '/styles-css/assets/products/headphone-black.png';
-            break;
-        case 'white':
-            mainImage.src = '/styles-css/assets/products/headphone-white.png';
-            break;
-        case 'blue':
-            mainImage.src = '/styles-css/assets/products/headphone-blue.png';
-            break;
-        case 'red':
-            mainImage.src = '/styles-css/assets/products/headphone-red.png';
-            break;
-        default:
-            break;
-    }
+  let mainImage = document.getElementById("current-image");
+  switch (color) {
+    case "black":
+      mainImage.src = "/styles-css/assets/products/headphone-black.png";
+      break;
+    case "white":
+      mainImage.src = "/styles-css/assets/products/headphone-white.png";
+      break;
+    case "blue":
+      mainImage.src = "/styles-css/assets/products/headphone-blue.png";
+      break;
+    case "red":
+      mainImage.src = "/styles-css/assets/products/headphone-red.png";
+      break;
+    default:
+      break;
+  }
 }
 
-=======
 function setDropdownText(text) {
   document.getElementById("dropdownMenuButton").textContent = text;
 }
 
+const setaEsquerda = document.querySelector(".seta-esquerda");
+const setaDireita = document.querySelector(".seta-direita");
+const pageNumbers = document.querySelectorAll(".number-pages h3");
+
+let currentPage = 1; // Start on page 1
+
+setaEsquerda.addEventListener("click", () => {
+  if (currentPage > 1) {
+    currentPage--;
+    updatePage();
+  }
+});
+
+setaDireita.addEventListener("click", () => {
+  if (currentPage < pageNumbers.length) {
+    currentPage++;
+    updatePage();
+  }
+});
+
+function updatePage() {
+  // Remove 'active' class from all page numbers
+  pageNumbers.forEach((page) => page.classList.remove("active"));
+
+  // Add 'active' class to the current page number
+  document.getElementById(`page${currentPage}`).classList.add("active");
+}
