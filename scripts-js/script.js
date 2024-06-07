@@ -47,6 +47,7 @@ document
     }
   });
 
+  // Trocar a foto do produto
   function changeImage(thumbnail) {
     let mainImage = document.getElementById('current-image');
     let tempSrc = mainImage.src;
@@ -73,4 +74,4 @@ function changeBola(color) {
             break;
     }
 }
-
+    //Contador de produtos

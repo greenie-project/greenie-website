@@ -1,0 +1,70 @@
+.description-product{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.description-product h3{
+    font-weight: 500;
+}
+.bolas-flex{
+    display: flex;
+    gap: 1.6rem;
+}
+.bolas-flex img{
+    width: 100%;
+    max-width: 3rem;
+    cursor: pointer;
+    transition: transform 0.2s;;
+}
+.bolas-flex img:hover{
+    transform: scale(1.1);
+}   
+.counter{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 1.4rem;
+}
+.counter div{
+    display: flex;
+    align-items: center;
+}
+.count-button{
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    transition: opacity .3s;
+}
+.count-button:hover{
+    opacity: .5;
+}
+.count-button:last-child{
+    margin-right: 0rem;
+    margin-left: 0rem;
+}
+.contador{
+   border: 0.1rem solid var(--color-black);
+   border-radius: 1rem;
+   padding: 1rem;
+}
+.buy{
+    display: flex;
+    gap:1.6rem;
+    align-items: center;
+    
+}
+.recicleDescription{
+    display: flex;
+    gap: 1.6rem;
+}
+.recicleDescription img{
+    width: 100%;
+    max-width: 4.6rem;
+}
+.recicleDescription p{
+    color: var(--color-verde-4);
+    font-size: 1.8rem;
+    font-weight:500;
+}
