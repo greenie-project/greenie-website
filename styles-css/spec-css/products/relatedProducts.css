@@ -1,3 +1,8 @@
-.container-related-products{
-  
+.container-related-products .grid-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.container-related-products .product-item-background{
+    
 }
