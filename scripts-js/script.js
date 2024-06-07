@@ -46,3 +46,31 @@ document
       reader.readAsDataURL(file);
     }
   });
+
+  function changeImage(thumbnail) {
+    let mainImage = document.getElementById('current-image');
+    let tempSrc = mainImage.src;
+    mainImage.src = thumbnail.src;
+    thumbnail.src = tempSrc;
+}
+
+function changeBola(color) {
+    let mainImage = document.getElementById('current-image');
+    switch (color) {
+        case 'black':
+            mainImage.src = '/styles-css/assets/products/headphone-black.png';
+            break;
+        case 'white':
+            mainImage.src = '/styles-css/assets/products/headphone-white.png';
+            break;
+        case 'blue':
+            mainImage.src = '/styles-css/assets/products/headphone-blue.png';
+            break;
+        case 'red':
+            mainImage.src = '/styles-css/assets/products/headphone-red.png';
+            break;
+        default:
+            break;
+    }
+}
+
