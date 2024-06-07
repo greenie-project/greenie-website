@@ -47,6 +47,7 @@ document
     }
   });
 
+
   function changeImage(thumbnail) {
     let mainImage = document.getElementById('current-image');
     let tempSrc = mainImage.src;
@@ -72,5 +73,10 @@ function changeBola(color) {
         default:
             break;
     }
+}
+
+=======
+function setDropdownText(text) {
+  document.getElementById("dropdownMenuButton").textContent = text;
 }
 
