@@ -15,9 +15,3 @@ document
     }
   });
 
-function changeImage(thumbnail) {
-  let mainImage = document.getElementById("current-image");
-  let tempSrc = mainImage.src;
-  mainImage.src = thumbnail.src;
-  thumbnail.src = tempSrc;
-}
