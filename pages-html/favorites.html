@@ -2,23 +2,19 @@
 <html lang="en">
 
 <head>
-
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>My Orders</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <link rel="stylesheet" href="/styles-css/resets.css">
-      <link rel="stylesheet" href="/styles-css/patterns.css">
-      <link rel="stylesheet" href="/styles-css/variables.css">
-      <link rel="stylesheet" href="/styles-css/fonts.css">
-      <link rel="stylesheet" href="/styles-css/style.css">
-      <link rel="stylesheet" href="/styles-css/responsive.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="icon" type="image/x-icon" href="/styles-css/assets/allpages/greenie_icon.png">
-   </head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Orders</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="/styles-css/resets.css">
+   <link rel="stylesheet" href="/styles-css/patterns.css">
+   <link rel="stylesheet" href="/styles-css/variables.css">
+   <link rel="stylesheet" href="/styles-css/fonts.css">
+   <link rel="stylesheet" href="/styles-css/style.css">
+   <link rel="stylesheet" href="/styles-css/responsive.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="icon" type="image/x-icon" href="/styles-css/assets/allpages/greenie_icon.png">
 </head>
-
 
 <body>
    <!---NAVBAR--->
@@ -51,67 +47,66 @@
       <div class="container-orders">
          <!-- TITLE -->
          <div class="section-title">
-            <h2>My orders</h2>
+            <h2>Favorites</h2>
          </div>
 
          <div class="grid-column-products">
-            <div class="column-individual-product">
+            <div class="column-individual-product" id="product-1">
                <div class="image-info-individual-product">
                   <div class="background-individual-product">
-                     <img src="../styles-css/assets/allproducts/smartwatch.png" alt="">
+                     <img src="../styles-css/assets/category/mochila.png" alt="">
                   </div>
                   <div class="info-individual-product">
-                     <p>Olevs Fashion Smart Watch</p>
+                     <p>Laptop Bag</p>
                      <div class="details-info-individual-product">
                         <p><span>Color</span> &#8901 Black</p>
                         <p><span>Size</span> &#8901 Default</p>
                      </div>
                   </div>
                </div>
-               <div class="button-track">
-                  <a href="">Track</a>
+               <div class="button-remove">
+                  <a href="#" onclick="removeItem('product-1')">Remove</a>
                </div>
             </div>
             <hr>
-            <div class="column-individual-product">
+            <div class="column-individual-product" id="product-2">
                <div class="image-info-individual-product">
                   <div class="background-individual-product">
-                     <img src="../styles-css/assets/featured-products/second-section/phonecase.png" alt="">
+                     <img src="../styles-css/assets/allproducts/mousewoods.png" alt="">
                   </div>
                   <div class="info-individual-product">
-                     <p>Iphone Case - Beautiful Garden</p>
+                     <p>Mouse - Woods</p>
                      <div class="details-info-individual-product">
-                        <p><span>Color</span> &#8901 White</p>
-                        <p><span>Size</span> &#8901 146,7 x 71,5 mm</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="button-track">
-                  <a href="">Track</a>
-               </div>
-            </div>
-            <hr>
-            <div class="column-individual-product">
-               <div class="image-info-individual-product">
-                  <div class="background-individual-product">
-                     <img src="../styles-css/assets/allproducts/speakerlsg.png" alt="">
-                  </div>
-                  <div class="info-individual-product">
-                     <p>Speaker LSG</p>
-                     <div class="details-info-individual-product">
-                        <p><span>Color</span> &#8901 White</p>
+                        <p><span>Color</span> &#8901 Wood</p>
                         <p><span>Size</span> &#8901 Default</p>
                      </div>
                   </div>
                </div>
-               <div class="button-received">
-                  <p>Received</p>
+               <div class="button-remove">
+                  <a href="#" onclick="removeItem('product-2')">Remove</a>
+               </div>
+            </div>
+            <hr>
+            <div class="column-individual-product" id="product-3">
+               <div class="image-info-individual-product">
+                  <div class="background-individual-product">
+                     <img src="../styles-css/assets/allproducts/keyboard.png" alt="">
+                  </div>
+                  <div class="info-individual-product">
+                     <p>Mechanic Keyboard - Woods</p>
+                     <div class="details-info-individual-product">
+                        <p><span>Color</span> &#8901 Wood</p>
+                        <p><span>Size</span> &#8901 Default</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="button-remove">
+                  <a href="#" onclick="removeItem('product-3')">Remove</a>
                </div>
             </div>
          </div>
       </div>
    </div>
-
 
    <footer>
       <div class="container-footer">
@@ -173,6 +168,7 @@
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
    <script src="../scripts-js/script.js"></script>
+   <script src="../scripts-js/favorites.js"></script>
 </body>
 
 </html>
