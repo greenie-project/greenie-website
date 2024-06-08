@@ -73,10 +73,11 @@ a {
   font-size: 2.4rem;
   transition: transform 0.3s ease;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .button-add-to-cart a:hover {
-  transform: scale(1.1);
+  color: var(--color-white);
 }
 .rating span {
   font-size: 2.4rem;

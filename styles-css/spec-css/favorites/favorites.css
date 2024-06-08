@@ -1,0 +1,21 @@
+.button-remove {
+  background-color: var(--color-verde-4);
+  padding: 1rem 4rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-remove a {
+  color: var(--color-white);
+}
+
+.button-remove:hover {
+  background-color: red;
+}
+
+.button-remove:hover a {
+  color: var(--color-white);
+}

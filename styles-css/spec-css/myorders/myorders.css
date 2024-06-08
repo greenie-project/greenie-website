@@ -4,11 +4,17 @@
 
 .grid-column-products {
   display: grid;
-  grid-template-columns: 2fr;
   gap: 5rem;
+  margin-top: 10rem;
 }
 
 .column-individual-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-individual-product .image-info-individual-product {
   display: flex;
   gap: 4rem;
 }
@@ -45,8 +51,14 @@
   font-weight: 500;
 }
 
-.button-track {
+.button-track,
+.button-received {
   align-self: center;
+  margin-left: auto;
+}
+
+.button-track {
+  transition: transform 0.3s ease;
 }
 
 .button-track a {
@@ -57,9 +69,8 @@
   border-radius: 1rem;
 }
 
-.button-received {
-  align-self: center;
-  justify-content: end;
+.button-track:hover {
+  transform: scale(1.1);
 }
 
 .button-received p {

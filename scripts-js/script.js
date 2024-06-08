@@ -1,39 +1,3 @@
-document
-  .getElementById("loginForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    // Retrieve email and password values
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-
-    // Define the valid email and password
-    var validEmail = "username@gmail.com";
-    var validPassword = "123456";
-
-    // Check if the entered email and password are correct
-    if (email === validEmail && password === validPassword) {
-      // If validation is successful, redirect to the profile page
-      window.location.href = "pages-html/profile.html";
-    } else {
-      // Display error message
-      alert("Invalid email or password. Please try again.");
-    }
-  });
-
-// Nome flutuante dos ícones da navbar
-const iconNames = document.querySelectorAll(".icon-name");
-
-iconNames.forEach((iconName) => {
-  iconName.parentNode.addEventListener("mousemove", (event) => {
-    const newX = event.clientX - iconName.offsetWidth - 10;
-    const newY = event.clientY - iconName.offsetHeight / 2;
-
-    iconName.style.left = `${newX}px`;
-    iconName.style.top = `${newY}px`;
-  });
-});
-
 // Navbar visivel apenas ao scrollar para cima
 document.addEventListener("DOMContentLoaded", function () {
   let lastScrollTop = 0;
@@ -68,3 +32,39 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Nome flutuante dos ícones da navbar
+const iconNames = document.querySelectorAll(".icon-name");
+
+iconNames.forEach((iconName) => {
+  iconName.parentNode.addEventListener("mousemove", (event) => {
+    const newX = event.clientX - iconName.offsetWidth - 10;
+    const newY = event.clientY - iconName.offsetHeight / 2;
+
+    iconName.style.left = `${newX}px`;
+    iconName.style.top = `${newY}px`;
+  });
+});
+
+document
+  .getElementById("loginForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Retrieve email and password values
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    // Define the valid email and password
+    var validEmail = "username@gmail.com";
+    var validPassword = "123456";
+
+    // Check if the entered email and password are correct
+    if (email === validEmail && password === validPassword) {
+      // If validation is successful, redirect to the profile page
+      window.location.href = "pages-html/profile.html";
+    } else {
+      // Display error message
+      alert("Invalid email or password. Please try again.");
+    }
+  });
