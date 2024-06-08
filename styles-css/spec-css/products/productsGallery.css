@@ -21,7 +21,8 @@
 }
 
 .main-image img {
-  width: 63rem;
+  width: 50rem;
+  height: 65rem;
   object-fit: contain;
 }
 
@@ -38,9 +39,12 @@
     cursor: pointer;
     border-radius: 0.5rem;
     transition: transform 0.2s;
-    background-color: var(--color-verde-1);   
+    background-color: var(--color-verde-1);  
+    aspect-ratio: 1/1; 
 }
-
+.thumbnails img {
+    object-fit: contain;
+}
 .thumbnail:hover {
     transform: scale(1.1);
 }
