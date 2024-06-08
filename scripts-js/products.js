@@ -19,7 +19,15 @@ function changeImage(thumbnail) {
   plusButton.addEventListener('mousedown', () => {
     intervalId = setInterval(() => {
         count += 1;
+        updateValue();
     }, 100);
-  })
+  });
 
-  
+  minusButton.addEventListener('mousedown', () => {
+    intervalId = setInterval(() => {
+        count -= 1;
+        updateValue();
+    }, 100);
+  });
+  document.addEventListener('mouseup', () => clearInterval(intervalId));
+
