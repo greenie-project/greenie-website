@@ -60,13 +60,13 @@
   font-weight: 500;
 }
 
-.modal-body-form .button-login {
+.button-login {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.modal-body-form .button-login button {
+.button-login button {
   display: inline-block;
   background-color: var(--color-verde-2);
   color: var(--color-white);
