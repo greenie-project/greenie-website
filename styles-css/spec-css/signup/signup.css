@@ -1,0 +1,77 @@
+.container-cadastro {
+  padding-top: 0 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.section-title {
+  display: flex;
+  gap: 2rem;
+}
+
+.container-cadastro .section-title img {
+  width: 100%;
+  max-width: 10rem;
+}
+
+.section-title h2 {
+  align-self: center;
+}
+
+.form-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#signupForm {
+  padding-top: 2rem;
+}
+
+.form-signup input {
+  width: 100%;
+  width: 45rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.form-signup input::placeholder {
+  color: var(--color-black-opaco);
+}
+
+.form-signup p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.button-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.button-create button {
+  display: inline-block;
+  background-color: var(--color-verde-2);
+  color: var(--color-white);
+  padding: 1rem 6rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  font-size: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.button-create button:hover {
+  background-color: var(--color-verde-3);
+}
