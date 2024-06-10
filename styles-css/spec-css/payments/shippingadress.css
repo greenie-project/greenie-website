@@ -1,0 +1,36 @@
+.container-shipping-adress .section-title {
+  padding-top: 18rem;
+}
+
+#shippingForm {
+  padding-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+#shippingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#shippingForm input {
+  width: 100%;
+  width: 45rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+#shippingForm input::placeholder {
+  color: var(--color-black-opaco);
+}
+
+#shippingForm p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}

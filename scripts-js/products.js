@@ -37,16 +37,16 @@ document.addEventListener("DOMContentLoaded", function () {
   addToCartButton.addEventListener("click", function (event) {
     event.preventDefault();
     if (addToCartButton.textContent === "Product in Cart") {
-      if (confirm("Tem certeza que deseja remover este produto do carrinho?")) {
+      if (
+        confirm("Are you sure you want to remove this product from the cart?")
+      ) {
         addToCartButton.textContent = "Add to Cart";
         addToCartButton.style.backgroundColor = "var(--color-bege-full)";
         addToCartButton.style.color = "var(--color-verde-4)";
         addToCartButton.style.pointerEvents = "auto"; // Habilita a capacidade de clicar novamente
       }
     } else {
-      if (
-        confirm("Tem certeza que deseja adicionar este produto ao carrinho?")
-      ) {
+      if (confirm("Are you sure you want to add this product to the cart?")) {
         addToCartButton.textContent = "Product in Cart";
         addToCartButton.style.backgroundColor = "var(--color-verde-4)";
         addToCartButton.style.color = "var(--color-white)";
