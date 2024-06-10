@@ -1,0 +1,50 @@
+.section-subtitle span {
+    font-weight: bold;
+}
+
+.specific-info-container {
+    display: flex;
+    margin-top: 6.063rem;
+    justify-content: space-between;
+}
+
+.specific-info-container p {
+    font-weight: bold;
+}
+
+.specific-info {
+    display: flex;
+    gap: 5.938rem;
+    
+}
+
+.infos-first, .infos-second {
+    font-weight: bold;
+}
+
+.infos-first span{
+    color: var(--color-verde-2)
+}
+
+.infos-second span{
+    color: var(--color-verde-2);
+}
+
+
+.infos-first{
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
+
+.infos-second{
+    display: flex;
+    gap: 9.8rem;
+    align-items: center;
+}
+
+
+.container-cart{
+    display: flex;
+    width: 60rem;
+}
