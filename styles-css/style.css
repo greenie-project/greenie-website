@@ -16,3 +16,7 @@
 @import url(spec-css/myorders/myorders.css);
 @import url(spec-css/favorites/favorites.css);
 @import url(spec-css/signup/signup.css);
+@import url(spec-css/payments/paycard.css);
+@import url(spec-css/payments/paymentmethod.css);
+@import url(spec-css/payments/shippingadress.css);
+@import url(spec-css/payments/shippingmethod.css);

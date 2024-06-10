@@ -1,0 +1,30 @@
+.choose-shipping-method {
+  display: grid;
+  gap: 2rem;
+}
+
+.choose-shipping-method .shipping-class {
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+.shipping-class {
+  display: flex;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.shipping-price {
+  display: flex;
+  gap: 1rem;
+}
+
+.shipping-price p {
+  align-self: center;
+  font-weight: 600;
+}
+
+.shipping-info {
+  width: 100%;
+  max-width: 28rem;
+}

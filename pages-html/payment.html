@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Greenie</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="/styles-css/resets.css">
+   <link rel="stylesheet" href="/styles-css/patterns.css">
+   <link rel="stylesheet" href="/styles-css/variables.css">
+   <link rel="stylesheet" href="/styles-css/fonts.css">
+   <link rel="stylesheet" href="/styles-css/style.css">
+   <link rel="stylesheet" href="/styles-css/responsive.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="icon" type="image/x-icon" href="/styles-css/assets/allpages/greenie_icon.png">
+</head>
+
+<body>
+   <!---NAVBAR--->
+   <nav id="navbar">
+      <div class="container-navbar">
+         <a href="/index.html"><img src="/styles-css/assets/navbar/logo-temporaria.svg" alt=""></a>
+         <div class="container-fluid">
+            <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+         </div>
+         <div class="navbar-icons">
+            <a href="../pages-html/favorites.html">
+               <img src="../styles-css/assets/navbar/icons-navbar/favorite.svg" alt="">
+               <span class="icon-name">Favorites</span>
+            </a>
+            <a href="">
+               <img src="/styles-css/assets/navbar/icons-navbar/cart.svg" alt="">
+               <span class="icon-name">Cart</span>
+            </a>
+            <a href="/pages-html/profile.html">
+               <img src="/styles-css/assets/navbar/icons-navbar/profile.svg" alt="">
+               <span class="icon-name">Profile</span>
+            </a>
+         </div>
+      </div>
+   </nav>
+
+   <div class="container">
+      <div class="all-payment">
+         <div class="payment-form">
+            <div class="container-shipping-adress">
+               <div class="section-title">
+                  <h2>Shipping Address</h2>
+               </div>
+               <div class="form-shipping">
+                  <form id="shippingForm">
+                     <div class="mb-3">
+                        <label for="firstname" class="form-label">
+                           <p>First Name</p>
+                        </label>
+                        <input type="text" class="form-control" id="firstname" required placeholder="Enter your first name here">
+                     </div>
+                     <div class="mb-3">
+                        <label for="lastname" class="form-label">
+                           <p>Last Name</p>
+                        </label>
+                        <input type="text" class="form-control" id="lastname" required placeholder="Enter your last name here">
+                     </div>
+                     <div class="mb-3">
+                        <label for="streetadress" class="form-label">
+                           <p>Street Address</p>
+                        </label>
+                        <input type="text" class="form-control" id="streetadress" required placeholder="Enter your street address here">
+                     </div>
+                     <div class="mb-3">
+                        <label for="state" class="form-label">
+                           <p>State</p>
+                        </label>
+                        <input type="text" class="form-control" id="state" required placeholder="Enter your state here">
+                     </div>
+                     <div class="mb-3">
+                        <label for="city" class="form-label">
+                           <p>City</p>
+                        </label>
+                        <input type="text" class="form-control" id="city" required placeholder="Enter your city here">
+                     </div>
+                     <div class="mb-3">
+                        <label for="cep" class="form-label">
+                           <p>CEP</p>
+                        </label>
+                        <input type="text" class="form-control" id="cep" required placeholder="Enter your cep here">
+                     </div>
+                     <div class="mb-3">
+                        <label for="phone" class="form-label">
+                           <p>Phone</p>
+                        </label>
+                        <input type="text" class="form-control" id="phone" required placeholder="Enter your phone number here">
+                     </div>
+                     <div class="mb-3">
+                        <label for="complement" class="form-label">
+                           <p>Complement</p>
+                        </label>
+                        <input type="text" class="form-control" id="complement" required placeholder="Enter your complement here">
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="container-shipping-method">
+               <div class="section-title">
+                  <h2>Shipping Method</h2>
+               </div>
+               <div class="choose-shipping-method">
+                  <div class="shipping-class">
+                     <div class="shipping-price">
+                        <input type="radio" name="shipping-method" value="2.99" id="shipping1">
+                        <p>$2.99</p>
+                     </div>
+                     <div class="shipping-info">
+                        <p>USPS 1st Class With Tracking (12 - 15 days)</p>
+                     </div>
+                  </div>
+                  <div class="shipping-class">
+                     <div class="shipping-price">
+                        <input type="radio" name="shipping-method" value="7.99" id="shipping2">
+                        <p>$7.99</p>
+                     </div>
+                     <div class="shipping-info">
+                        <p>USPS PRIORITY With Tracking (5 - 7 days)</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container-payment-method">
+               <div class="section-title">
+                  <h2>Payment Method</h2>
+               </div>
+               <div class="choose-payment-method">
+                  <div class="credit-debit" onclick="showPaymentMethod('credit-debit')">
+                     <img src="../styles-css/assets/payment/credit-debit.svg" alt="">
+                     <p>Credit or Debit</p>
+                  </div>
+                  <div class="pix" onclick="showPaymentMethod('pix')">
+                     <img src="../styles-css/assets/payment/pix.svg" alt="">
+                     <p>Pix</p>
+                  </div>
+                  <div class="bar-code" onclick="showPaymentMethod('bar-code')">
+                     <img src="../styles-css/assets/payment/bar-code.svg" alt="">
+                     <p>Bar Code</p>
+                  </div>
+               </div>
+               <div id="payment-credit-debit" class="payment-method-details">
+                  <form id="cardForm">
+                     <div class="mb-3">
+                        <label for="cardNumber" class="form-label">
+                           <p>Card Number</p>
+                        </label>
+                        <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card number">
+                     </div>
+                     <div class="mb-3">
+                        <label for="cardName" class="form-label">
+                           <p>Name on Card</p>
+                        </label>
+                        <input type="text" class="form-control" id="cardName" placeholder="Enter the name on your card">
+                     </div>
+                     <div class="mb-3">
+                        <label for="expiryDate" class="form-label">
+                           <p>Expiry Date</p>
+                        </label>
+                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+                     </div>
+                     <div class="mb-3">
+                        <label for="cvv" class="form-label">
+                           <p>CVV</p>
+                        </label>
+                        <input type="text" class="form-control" id="cvv" placeholder="Enter your card's CVV">
+                     </div>
+                  </form>
+               </div>
+               <div id="payment-pix" class="payment-method-details">
+                  <img src="../styles-css/assets/payment/pix-qr-code.png" alt="QR Code for Pix Payment">
+               </div>
+               <div id="payment-bar-code" class="payment-method-details">
+                  <img src="../styles-css/assets/payment/bar-code.png" alt="Bar Code for Payment">
+               </div>
+            </div>
+         </div>
+         <div class="payment-card">
+            <div class="payment-card-box">
+               <div class="order-review">
+                  <div class="card-title">
+                     <p>Order Review</p>
+                     <p><span class="toggle-arrow">&#9660;</span></p>
+                  </div>
+                  <div class="order-review-details">
+                     <div class="order-review-items">
+                        <p>2x Smartwatch</p>
+                        <p>$199.80</p>
+                     </div>
+                     <div class="order-review-items">
+                        <p>Iphone Case</p>
+                        <p>$8.99</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="billing-summary">
+                  <div class="card-title">
+                     <p>Billing Summary</p>
+                     <p><span class="toggle-arrow">&#9660;</span></p>
+                  </div>
+                  <div class="billing-details">
+                     <div class="billing-details-subtotal">
+                        <p>Subtotal</p>
+                        <p>$208.79</p>
+                     </div>
+                     <div class="billing-details-discount">
+                        <p>Discount</p>
+                        <p>$0.00</p>
+                     </div>
+                     <div class="billing-details-shipping">
+                        <p>Shipping</p>
+                        <p>$7.99</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="grand-total">
+                  <p>Grand Total</p>
+                  <p>$208.79</p>
+               </div>
+               <div class="checkbox-terms-and-police">
+                  <input type="checkbox" id="termsCheckbox">
+                  <a href="">
+                     <p>Please check to acknowledge our <span>Privacy & Terms Policy</span></p>
+                  </a>
+               </div>
+            </div>
+            <div class="payment-card-button">
+               <button>
+                  <p>Pay $217.88</p>
+               </button>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <footer>
+      <div class="container-footer">
+         <div class="first-section-footer">
+            <div class="footer-logo-and-rights">
+               <img src="/styles-css/assets/navbar/logo-temporaria.svg" alt="">
+               <div class="footer-medias">
+                  <img src="/styles-css/assets/footer/social-medias/facebook.svg" alt="">
+                  <img src="/styles-css/assets/footer/social-medias/instagram.svg" alt="">
+                  <img src="/styles-css/assets/footer/social-medias/youtube.svg" alt="">
+               </div>
+               <p>&copy 2024 Greenie. All Rights Reserved</p>
+            </div>
+            <div class="footer-infos">
+               <div>
+                  <p class="footer-title">Get to Know Us</p>
+                  <div class="footer-links">
+                     <p>About Us</p>
+                     <p>News</p>
+                     <p>Careers</p>
+                     <p>Contact Us</p>
+                     <p>How to Shop</p>
+                  </div>
+               </div>
+               <div>
+                  <p class="footer-title">Order & Returns</p>
+                  <div class="footer-links">
+                     <p>Shipping & Delivery</p>
+                     <p>Return & Exchange</p>
+                     <p>Track Order</p>
+                     <p>Payments</p>
+                  </div>
+               </div>
+               <div>
+                  <p class="footer-title">Contact Us</p>
+                  <div class="footer-links">
+                     <p>(702) 555-0122</p>
+                     <p>greenie@greenieco.com</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="second-section-footer">
+            <div class="footer-payments">
+               <img src="/styles-css/assets/footer/payments/mastercard.svg" alt="">
+               <img src="/styles-css/assets/footer/payments/visa.svg" alt="">
+               <img src="/styles-css/assets/footer/payments/applepay.svg" alt="">
+               <img src="/styles-css/assets/footer/payments/googlepay.svg" alt="">
+            </div>
+            <div class="footer-terms">
+               <p>Privacy Policy</p>
+               <p>Terms of Use</p>
+               <p>Shipping Policy</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+   <script src="../scripts-js/script.js"></script>
+   <script src="../scripts-js/payment.js"></script>
+</body>
+
+</html>

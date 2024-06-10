@@ -40,9 +40,14 @@ a {
   margin: 0 auto;
 }
 
+.section-title {
+  color: var(--color-verde-4);
+}
+
 .section-title-center {
   display: flex;
   justify-content: center;
+  color: var(--color-verde-4);
 }
 
 .button-buy-now a {

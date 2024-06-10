@@ -1,0 +1,135 @@
+.all-payment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-card {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  max-width: 40rem;
+  max-height: 40rem;
+}
+
+.payment-card p {
+  font-weight: 500;
+  color: var(--color-verde-4);
+}
+
+.payment-card-box {
+  margin-top: 28rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  padding: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-review,
+.billing-summary {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.order-review,
+.billing-summary p {
+  display: flex;
+}
+
+.toggle-arrow {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  transition: transform 0.3s;
+  align-self: center;
+}
+
+.toggle-arrow.open {
+  transform: rotate(180deg);
+}
+
+.order-review-details,
+.billing-details {
+  display: none;
+  margin-top: 1rem;
+}
+
+.order-review-details div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-review-details div p {
+  font-size: 1.6rem;
+  color: var(--color-black-opaco);
+}
+
+.billing-details div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.billing-details div p {
+  font-size: 1.6rem;
+  color: var(--color-black-opaco);
+}
+
+.grand-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.grand-total p {
+  font-weight: 600;
+}
+
+.checkbox-terms-and-police {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 33rem;
+}
+
+.checkbox-terms-and-police p {
+  font-size: 1.6rem;
+}
+
+.checkbox-terms-and-police span {
+  color: var(--color-verde-2);
+}
+
+.payment-card-button {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-card-button button {
+  padding: 1.5rem 10rem;
+  border-radius: 2rem;
+  background-color: var(--color-verde-3);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.payment-card-button button:hover {
+  background-color: var(--color-verde-4);
+}
+
+.payment-card-button button p {
+  color: var(--color-white);
+}
+
+.hidden {
+  display: none;
+}
