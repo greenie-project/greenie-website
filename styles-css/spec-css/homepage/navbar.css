@@ -86,3 +86,64 @@ nav {
 .navbar-icons a:hover .icon-name {
   display: block;
 }
+
+/* Estilos existentes... */
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  height: 0.3rem;
+  width: 2.5rem;
+  background-color: var(--color-verde-3);
+  margin: 0.4rem 0;
+  transition: 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--color-white);
+  width: 80%;
+  max-width: 30rem;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.mobile-menu a {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid var(--color-verde-3);
+}
+
+.mobile-menu a:first-child {
+  border-top: none;
+}
+
+@media (max-width: 60rem) {
+  .container-fluid,
+  .navbar-icons {
+    display: none;
+  }
+
+  .mobile-menu img {
+    width: 100%;
+    max-width: 3.2rem;
+  }
+
+  .mobile-menu span {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    align-self: center;
+  }
+}
