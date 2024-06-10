@@ -18,4 +18,45 @@
   .container-footer {
     max-width: 120rem;
   }
+}    
+@media screen and (max-width: 60rem){
+    html{
+        font-size: 36.7%;
+    }
+
+    .container{
+        max-width: 60rem;
+    }
+    .container-navbar{
+        max-width: 60rem;
+    }
+    .carousel-inner{
+        max-width: 60rem;
+    }
+    .container-footer{
+        max-width: 60rem;
+    }
+    .main-product{
+        grid-template-columns: 1fr; 
+    }
+    .container-related-products .grid-products{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-products{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .order-baixo{
+        grid-template-columns: 1fr; 
+    }
+  
+    .content-order::after{
+        width: 0;
+    }
+    .image-order{
+        display: flex;
+    }
+    .order-details{
+        display: none;
+    }
 }
