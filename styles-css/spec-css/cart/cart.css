@@ -50,60 +50,60 @@ span.section-subtitle span {
 .main-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .product-list {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .coupon-cart-total {
-    flex: 0 0 250px;
+    flex: 0 0 25rem;
     display: flex;
     flex-direction: column;
     background-color: var(--color-verde-3-opaco);
-    padding: 0px;
-    border-radius: 10px;
+    padding: 0rem;
+    border-radius: 1rem;
     margin-left: auto;
 }
 
 .coupon-code-section,
 .cart-total-section {
-    padding: 20px;
-    border-radius: 5px;
+    padding: 2rem;
+    border-radius: 0.5rem;
 }
 
 .coupon-code-section p{
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .coupon-code-section h3,
 .cart-total-section h3 {
-    margin-bottom: 30px;
-    font-size: 20px;
+    margin-bottom: 3rem;
+    font-size: 2rem;
 }
 
 .coupon-code-section input {
     width: 100%;
-    padding: 10px;
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
+    padding: 1rem;
+    margin: 2rem 0;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
 }
 
 .coupon-code-section button,
 .cart-total-section button {
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
     background-color: var(--color-verde-3);
     color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 1.2rem;
     cursor: pointer;
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 2rem;
+    font-size: 1.4rem;
 }
 
 .coupon-code-section button:hover,
@@ -114,19 +114,19 @@ span.section-subtitle span {
 .total-line {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
 }
 
 .bold {
     font-weight: bold;
-    margin: 30px 0;
+    margin: 3rem 0;
 }
 
-hr {
+.grid-column-products hr {
     border: none;
-    border-top: 5px solid #ddd;
-    margin: 20px 0;
+    border-top: 0.5rem solid #ddd;
+    margin: 2rem 0;
 }
 
 

@@ -59,4 +59,29 @@
     .order-details{
         display: none;
     }
+    .main-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+    .coupon-cart-total{
+       flex-direction: column;
+       margin-left: 0%;
+    }
+    .all-category{
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+    .spec-small-products-fp{
+        grid-template-columns: 1fr;
+    }
+    .second-section-fp{
+        grid-template-columns: 1fr 1fr;
+    } 
+    .first-section-fp{
+        grid-template-columns: 1fr;
+    }
+    .container-carousel{
+        
+    }
 }
