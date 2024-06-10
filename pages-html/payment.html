@@ -20,24 +20,45 @@
    <!---NAVBAR--->
    <nav id="navbar">
       <div class="container-navbar">
-         <a href="/index.html"><img src="/styles-css/assets/navbar/logo-temporaria.svg" alt=""></a>
+         <a href="/index.html"><img src="styles-css/assets/navbar/logo-temporaria.svg" alt=""></a>
          <div class="container-fluid">
             <form class="d-flex" role="search">
                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             </form>
          </div>
          <div class="navbar-icons">
-            <a href="../pages-html/favorites.html">
-               <img src="../styles-css/assets/navbar/icons-navbar/favorite.svg" alt="">
+            <a href="pages-html/favorites.html">
+               <img src="styles-css/assets/navbar/icons-navbar/favorite.svg" alt="">
                <span class="icon-name">Favorites</span>
             </a>
+            <a href="">
+               <img src="styles-css/assets/navbar/icons-navbar/cart.svg" alt="">
             <a href="/pages-html/cart.html">
                <img src="/styles-css/assets/navbar/icons-navbar/cart.svg" alt="">
                <span class="icon-name">Cart</span>
             </a>
-            <a href="/pages-html/profile.html">
-               <img src="/styles-css/assets/navbar/icons-navbar/profile.svg" alt="">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+               <img src="styles-css/assets/navbar/icons-navbar/profile.svg" alt="">
                <span class="icon-name">Profile</span>
+            </a>
+         </div>
+         <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <div class="mobile-menu">
+            <a href="pages-html/favorites.html">
+               <img src="styles-css/assets/navbar/icons-navbar/favorite.svg" alt="">
+               <span>Favorites</span>
+            </a>
+            <a href="">
+               <img src="styles-css/assets/navbar/icons-navbar/cart.svg" alt="">
+               <span>Cart</span>
+            </a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+               <img src="styles-css/assets/navbar/icons-navbar/profile.svg" alt="">
+               <span>Profile</span>
             </a>
          </div>
       </div>
