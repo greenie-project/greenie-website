@@ -69,8 +69,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
- 
-
 }
 .description-order h3{
     font-size: 3rem;
