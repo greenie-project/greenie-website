@@ -33,7 +33,7 @@
                <img src="styles-css/assets/navbar/icons-navbar/favorite.svg" alt="">
                <span class="icon-name">Favorites</span>
             </a>
-            <a href="">
+            <a href="/pages-html/cart.html">
                <img src="styles-css/assets/navbar/icons-navbar/cart.svg" alt="">
                <span class="icon-name">Cart</span>
             </a>
@@ -42,8 +42,28 @@
                <span class="icon-name">Profile</span>
             </a>
          </div>
+         <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <div class="mobile-menu">
+            <a href="pages-html/favorites.html">
+               <img src="styles-css/assets/navbar/icons-navbar/favorite.svg" alt="">
+               <span>Favorites</span>
+            </a>
+            <a href="">
+               <img src="styles-css/assets/navbar/icons-navbar/cart.svg" alt="">
+               <span>Cart</span>
+            </a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+               <img src="styles-css/assets/navbar/icons-navbar/profile.svg" alt="">
+               <span>Profile</span>
+            </a>
+         </div>
       </div>
    </nav>
+
 
    <!-- Modal -->
    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -79,9 +99,6 @@
          </div>
       </div>
    </div>
-
-
-
 
    <!-- PAGE LINKS -->
    <div class="container-links">
