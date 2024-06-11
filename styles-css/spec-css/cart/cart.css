@@ -1,4 +1,4 @@
-span.section-subtitle span {
+.section-subtitle span {
   font-weight: bold;
 }
 
@@ -106,8 +106,28 @@ span.section-subtitle span {
   font-size: 1.4rem;
 }
 
+.coupon-code-section a,
+.cart-total-section a {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-verde-3);
+  color: white;
+  border: none;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+
 .coupon-code-section button:hover,
 .cart-total-section button:hover {
+  background-color: var(--color-verde-2);
+}
+
+.coupon-code-section a:hover,
+.cart-total-section a:hover {
   background-color: var(--color-verde-2);
 }
 
