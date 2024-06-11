@@ -18,70 +18,87 @@
   .container-footer {
     max-width: 120rem;
   }
-}    
-@media screen and (max-width: 60rem){
-    html{
-        font-size: 36.7%;
-    }
+}
+@media screen and (max-width: 60rem) {
+  html {
+    font-size: 36.7%;
+  }
 
-    .container{
-        max-width: 60rem;
-    }
-    .container-navbar{
-        max-width: 60rem;
-    }
-    .carousel-inner{
-        max-width: 60rem;
-    }
-    .container-footer{
-        max-width: 60rem;
-    }
-    .main-product{
-        grid-template-columns: 1fr; 
-    }
-    .container-related-products .grid-products{
-        grid-template-columns: 1fr 1fr;
-    }
-    .grid-products{
-        grid-template-columns: 1fr 1fr;
+  .container {
+    max-width: 60rem;
+  }
+  .container-navbar {
+    max-width: 60rem;
+  }
+  .all-content-carousel {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10rem 1.5rem;
+  }
+  .carousel-inner {
+    max-width: 60rem;
+  }
+  .image-side-carousel > div {
+    width: 30rem;
+    height: 30rem;
+    display: none;
+  }
+  .image-side-carousel img {
+    display: none;
+  }
+  .container-footer {
+    max-width: 60rem;
+  }
+  .main-product {
+    grid-template-columns: 1fr;
+  }
+  .container-related-products .grid-products {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-products {
+    grid-template-columns: 1fr 1fr;
+  }
+  .order-baixo {
+    grid-template-columns: 1fr;
+  }
 
-    }
-    .order-baixo{
-        grid-template-columns: 1fr; 
-    }
-  
-    .content-order::after{
-        width: 0;
-    }
-    .image-order{
-        display: flex;
-    }
-    .order-details{
-        display: none;
-    }
-    .main-content{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 5rem;
-    }
-    .coupon-cart-total{
-       flex-direction: column;
-       margin-left: 0%;
-    }
-    .all-category{
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-    }
-    .spec-small-products-fp{
-        grid-template-columns: 1fr;
-    }
-    .second-section-fp{
-        grid-template-columns: 1fr 1fr;
-    } 
-    .first-section-fp{
-        grid-template-columns: 1fr;
-    }
-    .container-carousel{
-        
-    }
+  .content-order::after {
+    width: 0;
+  }
+  .image-order {
+    display: flex;
+  }
+  .order-details {
+    display: none;
+  }
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  .coupon-cart-total {
+    flex-direction: column;
+    margin-left: 0%;
+  }
+  .all-category {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  .spec-small-products-fp {
+    grid-template-columns: 1fr;
+  }
+  .second-section-fp {
+    grid-template-columns: 1fr 1fr;
+  }
+  .first-section-fp {
+    grid-template-columns: 1fr;
+  }
+  .all-payment {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .payment-card-box {
+    margin-top: 10rem;
+  }
 }

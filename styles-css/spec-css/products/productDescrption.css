@@ -1,73 +1,76 @@
-.description-product{
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
+.description-product {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
-.description-product h3{
-    font-weight: 500;
+.description-product h3 {
+  font-weight: 500;
 }
-.bolas-flex{
-    display: flex;
-    gap: 1.6rem;
+.text-description {
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
 }
-.bolas-flex img{
-    width: 100%;
-    max-width: 3rem;
-    cursor: pointer;
-    transition: transform 0.2s;;
+.bolas-flex {
+  display: flex;
+  gap: 1.6rem;
 }
-.bolas-flex img:hover{
-    transform: scale(1.1);
-}   
-.counter{
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    gap: 1.4rem;
+.bolas-flex img {
+  width: 100%;
+  max-width: 3rem;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
-.counter div{
-    display: flex;
-    align-items: center;
+.bolas-flex img:hover {
+  transform: scale(1.1);
 }
-.count-button{
-    font-weight: 500;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    font-size: 2rem;
-    transition: opacity .3s;
+.counter {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 1.4rem;
 }
-.count-button:hover{
-    opacity: .5;
+.counter div {
+  display: flex;
+  align-items: center;
 }
-.count-button:last-child{
-    margin-right: 0rem;
-    margin-left: 0rem;
+.count-button {
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  transition: opacity 0.3s;
 }
-.contador{
-   border: 0.1rem solid var(--color-black);
-   border-radius: 1rem;
-   padding: 1rem;
+.count-button:hover {
+  opacity: 0.5;
 }
-.buy{
-    display: flex;
-    gap:1.6rem;
-    align-items: center;
-    
+.count-button:last-child {
+  margin-right: 0rem;
+  margin-left: 0rem;
 }
-.recicleDescription{
-    display: flex;
-    gap: 1.6rem;
+.contador {
+  border: 0.1rem solid var(--color-black);
+  border-radius: 1rem;
+  padding: 1rem;
 }
-.recicleDescription img{
-    width: 100%;
-    max-width: 4.6rem;
+.buy {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
 }
-.recicleDescription p{
-    color: var(--color-verde-4);
-    font-size: 1.8rem;
-    font-weight:500;
+.recicleDescription {
+  display: flex;
+  gap: 1.6rem;
 }
-.contador span{
-    font-size: 2rem;
+.recicleDescription img {
+  width: 100%;
+  max-width: 4.6rem;
+}
+.recicleDescription p {
+  color: var(--color-verde-4);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.contador span {
+  font-size: 2rem;
 }
