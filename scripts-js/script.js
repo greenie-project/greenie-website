@@ -65,7 +65,8 @@ document
       window.location.href = "pages-html/profile.html";
     } else {
       // Display error message
-      alert("Invalid email or password. Please try again.");
+      var errorMessage = document.getElementById("error-message");
+      errorMessage.style.display = "block";
     }
   });
 

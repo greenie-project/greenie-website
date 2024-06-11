@@ -1,132 +1,130 @@
 span.section-subtitle span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .specific-info-container {
-    display: flex;
-    margin-top: 6.063rem;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 6.063rem;
+  justify-content: space-between;
 }
 
 .specific-info-container p {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .specific-info {
-    display: flex;
-    gap: 3.8rem;
+  display: flex;
+  gap: 3.8rem;
 }
 
 .infos-first,
 .infos-second {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .infos-first span {
-    color: var(--color-verde-2)
+  color: var(--color-verde-2);
 }
 
 .infos-second span {
-    color: var(--color-verde-2);
+  color: var(--color-verde-2);
 }
 
 .infos-first {
-    display: flex;
-    gap: 7.5rem;
-    align-items: center;
+  display: flex;
+  gap: 7.5rem;
+  align-items: center;
 }
 
 .infos-second {
-    display: flex;
-    gap: 7.5rem;
-    align-items: center;
+  display: flex;
+  gap: 7.5rem;
+  align-items: center;
 }
 
 .container-cart {
-    display: flex;
-    width: 60rem;
+  display: flex;
+  width: 60rem;
 }
 
 .main-content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .product-list {
-    flex: 1;
-    margin-right: 2rem;
+  flex: 1;
+  margin-right: 2rem;
 }
 
 .coupon-cart-total {
-    flex: 0 0 25rem;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-verde-3-opaco);
-    padding: 0rem;
-    border-radius: 1rem;
-    margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-verde-3-opaco);
+  padding: 0rem;
+  border-radius: 1rem;
+  margin-left: auto;
 }
 
 .coupon-code-section,
 .cart-total-section {
-    padding: 2rem;
-    border-radius: 0.5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
 }
 
-.coupon-code-section p{
-    font-size: 1.6rem;
+.coupon-code-section p {
+  font-size: 1.6rem;
 }
 
 .coupon-code-section h3,
 .cart-total-section h3 {
-    margin-bottom: 3rem;
-    font-size: 2rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
 .coupon-code-section input {
-    width: 100%;
-    padding: 1rem;
-    margin: 2rem 0;
-    border: 0.1rem solid #ddd;
-    border-radius: 0.5rem;
-    font-size: 1.4rem;
+  width: 100%;
+  padding: 1rem;
+  margin: 2rem 0;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
 }
 
 .coupon-code-section button,
 .cart-total-section button {
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--color-verde-3);
-    color: white;
-    border: none;
-    border-radius: 1.2rem;
-    cursor: pointer;
-    margin-top: 2rem;
-    font-size: 1.4rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-verde-3);
+  color: white;
+  border: none;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1.4rem;
 }
 
 .coupon-code-section button:hover,
 .cart-total-section button:hover {
-    background-color: var(--color-verde-2);
+  background-color: var(--color-verde-2);
 }
 
 .total-line {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 
 .bold {
-    font-weight: bold;
-    margin: 3rem 0;
+  font-weight: bold;
+  margin: 3rem 0;
 }
 
 .grid-column-products hr {
-    border: none;
-    border-top: 0.5rem solid #ddd;
-    margin: 2rem 0;
+  border: none;
+  border-top: 0.5rem solid #ddd;
+  margin: 2rem 0;
 }
-
-

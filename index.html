@@ -88,7 +88,12 @@
                         </label>
                         <input type="password" class="form-control" id="password" required placeholder="Enter your password here">
                      </div>
-                     <div class="button-login"><button type="submit" id="loginButton">Login</button></div>
+                     <div id="error-message" style="color: red; display: none;">
+                        <p>Invalid email or password. Please try again.</p>
+                     </div>
+                     <div class="button-login">
+                        <button type="submit" id="loginButton">Login</button>
+                     </div>
                   </form>
                   <div class="sign-up-link">
                      <p>Don't have an account?</p>
@@ -99,6 +104,7 @@
          </div>
       </div>
    </div>
+
 
    <!-- PAGE LINKS -->
    <div class="container-links">

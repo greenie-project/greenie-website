@@ -1,3 +1,15 @@
+window.onload = function () {
+  var cepInput = document.getElementById("cep");
+
+  cepInput.addEventListener("input", function () {
+    var cep = cepInput.value.replace(/\D/g, "");
+    if (cep.length > 5) {
+      cep = cep.replace(/^(\d{5})(\d{1,3})/, "$1-$2");
+    }
+    cepInput.value = cep;
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   const toggleSections = (summarySelector, detailsSelector, arrowSelector) => {
     const summaryElement = document.querySelector(summarySelector);
@@ -31,25 +43,45 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const paymentButton = document.querySelector(".payment-card-button button");
-  const termsCheckbox = document.getElementById("termsCheckbox");
+function validarFormulario() {
+  // Obtém todos os campos do formulário
+  var campos = document.querySelectorAll("#shippingForm input");
 
-  paymentButton.addEventListener("click", function () {
-    // Verifica se o checkbox de termos está marcado
-    if (!termsCheckbox.checked) {
-      alert("Please select the terms and conditions checkbox to continue.");
-      return;
+  // Verifica se algum campo está vazio
+  for (var i = 0; i < campos.length; i++) {
+    if (campos[i].value.trim() === "") {
+      alert("Please fill in all fields of the form.");
+      return false;
     }
+  }
 
+  // Verifica se o checkbox dos termos foi marcado
+  var termsCheckbox = document.getElementById("termsCheckbox");
+  if (!termsCheckbox.checked) {
+    alert("Please check the checkbox to accept the privacy and terms policy.");
+    return false;
+  }
+
+  // Se todos os campos estão preenchidos e o checkbox dos termos foi marcado, retorna true
+  return true;
+}
+
+// Adiciona um evento de clique ao botão de pagamento
+var botaoPagamento = document.querySelector(".payment-card-button button");
+botaoPagamento.addEventListener("click", function (event) {
+  // Cancela o evento padrão de clique no botão
+  event.preventDefault();
+
+  // Executa a função de validação do formulário
+  var formularioValido = validarFormulario();
+
+  // Se o formulário for válido, prossegue com o pagamento
+  if (formularioValido) {
     if (confirm("Are you sure you want to make this purchase?")) {
-      // Exibir o alerta de compra realizada
-      alert("Purchase made successfully!");
-
-      // Redirecionar para a página de índice
+      alert("Purchase made successfully");
       window.location.href = "../index.html";
     }
-  });
+  }
 });
 
 function showPaymentMethod(method) {
